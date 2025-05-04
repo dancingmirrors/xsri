@@ -304,7 +304,8 @@ position_emblem (void)
         }
 
         if (avoid) {
-                int avoid_x, avoid_y, avoid_width, avoid_height;
+                int avoid_x, avoid_y;
+                unsigned int avoid_width, avoid_height;
                 int avoid_flags;
                 int new_width, new_height;
                 int tmp_x, tmp_y;
@@ -369,7 +370,7 @@ position_emblem (void)
                 if (x_space <= 0 && y_space <= 0) {
                         /* Can't adjust */
                         
-                        gdk_pixbuf_unref (bg_state.emblem_pixbuf);
+                        g_object_unref (bg_state.emblem_pixbuf);
                         bg_state.emblem_pixbuf = NULL;
 
                         return;
