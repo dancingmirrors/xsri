@@ -1,7 +1,17 @@
 *.o
+*~
 .deps
 Makefile
+Makefile.in
 autom4te.cache
+compile
 config.log
 config.status
+configure
+depcomp
+install-sh
+missing
+mkinstalldirs
+stamp*
 xsri
+xsri.spec
