@@ -20,7 +20,7 @@ changequote(,)dnl
 if test "x$GCC" = "xyes"; then
   case " $CFLAGS " in
   *[\ \	]-Wall[\ \	]*) ;;
-  *) CFLAGS="$CFLAGS -Wall" ;;
+  *) CFLAGS="$CFLAGS -Wall -Wno-deprecated-declarations" ;;
   esac
 fi
 changequote([,])dnl
