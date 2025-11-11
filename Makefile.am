@@ -1,6 +1,7 @@
 INCLUDES =					\
 	$(GTK_CFLAGS)				\
-	-DSYSCONFDIR=\"$(sysconfdir)\"
+	-DSYSCONFDIR=\"$(sysconfdir)\"		\
+	-Wno-deprecated-declarations
 
 bin_PROGRAMS = xsri
 
